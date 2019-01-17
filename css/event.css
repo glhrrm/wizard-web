@@ -1,0 +1,230 @@
+.event-container {
+    background-color: #FFFFFF;
+    margin: 11px;
+    border-radius: 5px;
+    padding: 22px;
+    max-width: fit-content;
+    width: 100%;
+    margin-left: 22px;
+}
+
+input, select {
+    width: 70%;
+    height: 56px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    font-size: 16px;
+    color: #5C5C5C;
+    padding: 11px;
+}
+
+input[type="date" i], input[type="time" i], input[type="checkbox" i] {
+    width: fit-content;
+    min-width: fit-content;
+}
+
+input[type="radio" i] {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 11px 0px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    font-size: 16px;
+    color: #5C5C5C;
+}
+
+.radio input, .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFF;
+    border: 2px solid #32363F;
+}
+
+.radio .checkmark {
+    border-radius: 50%;
+}
+
+.checkbox .checkmark {
+    border-radius: 20%;
+}
+
+.checkmark:after {
+    content: "";
+    position: relative;
+    display: none;
+}
+
+input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #32363F;
+}
+
+.checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .checkmark {
+    background-color: #32363F;
+}
+
+.guest-suggestions {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+}
+
+.guest-box {
+    height: 100px;
+    width: 290px;
+    min-width: 100px;
+    padding: 22px;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    display: flex;
+    margin: 11px;
+    margin-inline-start: 0px;
+    margin-block-start: 0px;
+}
+
+.guest-box:hover {
+    border: 2px solid #32363F;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    font-size: 16px;
+    color: #5C5C5C;
+}
+
+.guest {
+    display: flex;
+    margin: auto 0px;
+}
+
+.guest-name {
+    padding: 0px 11px;
+}
+
+.guest-box .profile-image {
+    clip-path: circle(at center);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    margin: 0px 33px;
+}
+
+.guest .checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: #FFF;
+    border: 2px solid #32363F;
+}
+
+.guest input {
+    height: auto;
+}
+
+.button-line {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.cancel-button, .submit-button {
+    border-radius: 3px;
+    width: 100%;
+    max-width: 270px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    margin-inline-start: 11px;
+    margin-inline-end: 11px;
+    margin-block-start: 11px;
+}
+
+.cancel-button {
+    background-color: #929292;
+}
+
+.cancel-button:hover {
+    background-color: #5e5e5e;
+}
+
+.submit-button {
+    background-color: #7a417a;
+}
+
+.submit-button:hover {
+    background-color: #602060;
+}
+
+.button-content {
+    margin: auto;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 520px) {
+    .button-line {
+        margin: 0px -22px -22px -22px;
+    }
+
+    .cancel-button, .submit-button {
+        border-radius: 0px;
+        width: 100%;
+        margin: 22px 0px 0px 0px;
+    }
+
+    .guest-box, .checkbox {
+        min-width: 100%;
+        margin: 0px;
+    }
+}

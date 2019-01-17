@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wizard Web</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/event.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/feed.css">
+        <link rel="icon" href="../img/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,500|Roboto+Condensed:300,700|Roboto:300,400i,500|Fredoka+One" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header class="header">
+            <label for="toggle" class="button">
+                <img src="../img/menu.svg">
+            </label>
+            <a href="../index.html" id="wizard-web-logo">
+                <div id="wizard-web-icon">
+                    <img src="../img/icon.png">
+                </div>
+                <div id="wizard-web-lettering">
+                    WIZARD WEB
+                </div>
+            </a>
+            <div id="search-bar">
+                <div id="search-content">
+                    <img src="../img/magnifying-glass.svg">
+                    <input id="search" type="search" placeholder="Pesquisar">
+                </div>
+            </div>
+            <div id="search-icon">
+                <img src="../img/white-magnifying-glass.svg">
+            </div>
+            <div id="notification-icon">
+                <img src="../img/ring.svg">
+            </div>
+        </header>
+        <input type="checkbox" id="toggle"></input>
+        <div class="sidebar">
+            <div class="profile-info">
+                <img class="profile-image" src="../img/moody.jpg" alt="Moody">
+                <div class="username">
+                    Moody
+                </div>
+                <div class="profile-button">
+                    <div class="button-content">
+                        Meu perfil
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="section">
+                <div class="section-name">
+                    Meus grupos
+                    <div class="more">
+                        <img src="../img/more.svg">
+                    </div>
+                </div>
+                <div class="group-item">
+                    <div id="group-icon">
+                        <img src="../img/001-magic-wand.svg">
+                    </div>
+                    <div class="group-name">
+                        Ministério da Magia
+                    </div>
+                </div>
+                <div class="group-item">
+                    <div id="group-icon">
+                        <img src="../img/002-witch-hat.svg">
+                    </div>
+                    <div class="group-name">
+                        Professores de Hogwarts
+                    </div>
+                </div>
+                <div class="group-item">
+                    <div id="group-icon">
+                        <img src="../img/003-chemistry.svg">
+                    </div>
+                    <div class="group-name">
+                        Poções L0k4s
+                    </div>
+                </div>
+                <div class="group-item">
+                    <div id="group-icon">
+                        <img src="../img/004-eye.svg">
+                    </div>
+                    <div class="group-name">
+                        Vigilância Constante!
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="section">
+                <div class="section-name">
+                    Eventos
+                    <div class="more">
+                        <div class="drop-button">
+                            <img src="../img/more.svg">
+                            <div class="more-options">
+                                <div class="option-button">
+                                    <div class="option">Ocultar</div>
+                                </div>
+                                <a href="event.html">
+                                <div class="option-button">
+                                    <div class="option">Criar evento</div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-info">
+                    <img class="event-image" src="../img/mcgonagall.jpg" alt="Minerva McGonagall">
+                    <div class="event-details">
+                        <p class="event-date">
+                            <strong>Hoje</strong>
+                        </p>
+                        <p class="event-description">
+                            Aniversário: Minerva McGonagall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="event-container">
+                <h1>Criar evento</h1>
+                
+                <h2>Tipo de evento</h2>
+                <label class="radio">Público
+                    <input type="radio" name="tipo-evento" value="publico">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio">Privado
+                    <input type="radio" name="tipo-evento" value="privado">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <h2>Nome do evento</h2>
+                <input type="text" name="nome-evento"><br>
+                
+                <h2>Quando irá acontecer?</h2>
+                <input type="date" name="data-evento">
+                <span style="padding: 11px; font-family: 'Roboto';font-style: normal;font-weight: normal;line-height: 22px;font-size: 16px;color: #5C5C5C">às</span>
+                <input type="time" name="hora-evento">
+                
+                <h2>Traje</h2>
+                <select>
+                    <option hidden>Selecione</option>
+                    <option value="bruxo">Vestes de bruxo</option>
+                    <option value="gala">Traje de gala</option>
+                    <option value="trouxa">Roupa de trouxa</option>
+                </select>
+
+                <h2>Convidar <span style="font-weight: 300;color: #5C5C5C">(opcional)</span></h2>
+                <div class="guest-suggestions">
+                    <label class="checkbox">
+                        <div class="guest-box">
+                            <div class="guest">
+                                <input type="checkbox" name="alvo-dumbledore" value="Alvo Dumbledore">
+                                <span class="checkmark"></span>
+                                <div class="guest-name">Alvo Dumbledore</div>
+                            </div>
+                            <img class="profile-image" src="../img/dumbledore.jpg" alt="Alvo Dumbledore">
+                        </div>
+                    </label>
+                    <label class="checkbox">
+                        <div class="guest-box">
+                            <div class="guest">
+                                <input type="checkbox" name="ninfadora-tonks" value="Ninfadora Tonks">
+                                <span class="checkmark"></span>
+                                <div class="guest-name">Ninfadora Tonks</div>
+                            </div>
+                            <img class="profile-image" src="../img/tonks.jpg" alt="Ninfadora Tonks">
+                        </div>
+                    </label>
+                    <label class="checkbox">
+                        <div class="guest-box">
+                            <div class="guest">
+                                <input type="checkbox" name="arthur-weasley" value="Arthur Weasley">
+                                <span class="checkmark"></span>
+                                <div class="guest-name">Arthur Weasley</div>
+                            </div>
+                            <img class="profile-image" src="../img/arthur.jpg" alt="Arthur Weasley">
+                        </div>
+                    </label>
+                </div>
+                <div class="button-line">
+                    <div class="submit-button">
+                        <div class="button-content">
+                            Criar evento
+                        </div>
+                    </div>
+                    <div class="cancel-button">
+                        <div class="button-content">
+                            Cancelar
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

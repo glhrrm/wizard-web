@@ -1,0 +1,124 @@
+.header {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: #602060;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    display: flex;
+    padding-right: 50px;
+    justify-content: space-around;
+}
+
+.button {
+    flex: 0;
+    margin: auto 20px;
+    display: none;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked ~ .sidebar {
+    display: initial;
+    position: absolute;
+}
+
+input[type="checkbox" i] {
+    margin: 0px;
+    height: 0px;
+    width: 0px;
+}
+
+#wizard-web-logo {
+    display: inline-flex;
+    margin: auto 20px;    
+}
+
+#wizard-web-icon {
+    width: 55px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+#wizard-web-icon img {
+    width: 70%;
+    margin: auto;
+}
+
+#wizard-web-lettering {
+    font-family: 'Fredoka One';
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-left: 16px;
+    margin: auto 0px;
+    width: fit-content;
+}
+
+#search-bar {
+    height: 56px;
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    flex: 1;
+    margin: auto 20px;
+}
+
+#search-content {
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#search-icon {
+    display: none;
+}
+
+input[type="search" i] {
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 24px;
+    color: #A5A9AC;
+    border: none;
+    outline: none;
+}
+
+#search::-webkit-search-cancel-button {
+    display: none;
+}
+
+#notification-icon {
+    display: flex;
+    flex: 0;
+    margin: auto 20px;
+}
+
+@media (max-width: 867px) {
+    .button {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 520px) {
+    #search-bar {
+        display: none;
+    }
+
+    #search-icon {
+        display: flex;
+        flex: 0;
+        margin: auto 20px;
+    }
+}
